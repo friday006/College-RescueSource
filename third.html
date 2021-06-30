@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Year Section</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg') center center/cover no-repeat;
+        }
+
+        .heading {
+            color: darkgreen;
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            font-family: 'Merienda One', cursive;
+            font-weight: bolder;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        .content {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .books {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 3px 3px grey;
+        }
+
+        .books:hover {
+            box-shadow: -3px -3px grey;
+            border: 2px solid brown;
+        }
+
+        .books a {
+            display: inline-block;
+            color: #b8860b;
+            text-decoration: none;
+            font-family: 'Teko', sans-serif;
+            font-size: 1.6rem;
+        }
+
+        .books a:hover {
+            color: #a52a2a;
+        }
+
+        .books p {
+            display: inline-block;
+            font-family: 'Teko', sans-serif;
+            font-size: 1.6rem;
+        }
+
+        .books img {
+            width: 200px;
+            height: 260px;
+        }
+
+        .btn {
+            display: block;
+            background-color: #a9a9a9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px auto;
+            font-family: 'Caveat', cursive;
+            font-size: 1.3rem;
+        }
+
+        .back {
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .bottom-container {
+            padding: 20px;
+            background-color: #ffe4c4;
+        }
+
+        .bottom-container p {
+            display: block;
+            color: #ffa500;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Welcome to Third Year Section</h1>
+    <div class="container">
+
+        <div class="content">
+            <div class="books">
+                <div>
+                    <img src="img/Book 1.png">
+                </div>
+                <div>
+                    <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=http://ce.sharif.edu/courses/94-95/1/ce414-2/resources/root/Text%2520Books/Automata/John%2520E.%2520Hopcroft,%2520Rajeev%2520Motwani,%2520Jeffrey%2520D.%2520Ullman-Introduction%2520to%2520Automata%2520Theory,%2520Languages,%2520and%2520Computations-Prentice%2520Hall%2520(2006).pdf&ved=2ahUKEwjR-brO-KPxAhUVfX0KHWQjBisQFjAAegQIBBAC&usg=AOvVaw0HIsxE6phBX-TekG4J55y1"
+                        target="_blank">Introduction to Automata Thoery, Languages and Computation</a><br>
+                    <p>BY: Hopcroft, J, E; Motwani, J; Ullman, J, D</p>
+                    <br>
+                    <p>Published By: Pearson Education</p>
+                </div>
+            </div>
+            <div class="books">
+                <div>
+                    <img src="img/Book 2.png">
+                </div>
+                <div>
+                    <a href="https://content.kopykitab.com/ebooks/2016/06/7411/sample/sample_7411.pdf"
+                        target="_blank">Theory of Computer Science</a><br>
+                    <p>BY: Mishra, K, L, P; Chandrasekaran, N</p><br>
+                    <p>Published By: PHI</p>
+                </div>
+            </div>
+            <div class="books">
+                <div>
+                    <img src="img/Book 3.png">
+                </div>
+                <div>
+                    <a href="https://cseweb.ucsd.edu/classes/wi19/cse124-a/courseoverview/compnetworks.pdf"
+                        target="_blank">Computer Networks A Systems Approach</a><br>
+                    <p>BY: Peterson and Davie</p>
+                </div>
+            </div>
+            <div class="books">
+                <div>
+                    <img src="img/Book 4.png">
+                </div>
+                <div>
+                    <a href="https://inspirit.net.in/books/academic/Computer%20Graphics%20C%20Version%20-%20Hearn%20&%20Baker.pdf"
+                        target="_blank">Computer Graphics</a><br>
+                    <p>BY: Hearn and Baker</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="back" href="index.html"> <button class="btn">Return to Home Screen</button></a>
+
+    <div class="bottom-container">
+        <p>© | College-RescueSource | 2021-2022 </p>
+    </div>
+</body>
+
+</html>

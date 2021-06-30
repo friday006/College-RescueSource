@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth Year Section</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg') center center/cover no-repeat;
+        }
+
+        .heading {
+            color: darkgreen;
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            font-family: 'Merienda One', cursive;
+            font-weight: bolder;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        .content {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .books {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 3px 3px grey;
+        }
+
+        .books:hover {
+            box-shadow: -3px -3px grey;
+            border: 2px solid brown;
+        }
+
+        .books a {
+            display: inline-block;
+            color: #b8860b;
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-family: 'Teko', sans-serif;
+        }
+
+        .books a:hover {
+            color: #a52a2a;
+        }
+
+        .books p {
+            display: inline-block;
+            font-family: 'Teko', sans-serif;
+            font-size: 1.6rem;
+        }
+
+        .books img {
+            width: 200px;
+            height: 260px;
+        }
+
+        .btn {
+            display: block;
+            background-color: #a9a9a9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px auto;
+            font-family: 'Caveat', cursive;
+            font-size: 1.3rem;
+        }
+
+        .back {
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .bottom-container {
+            padding: 20px;
+            background-color: #ffe4c4;
+        }
+
+        .bottom-container p {
+            display: block;
+            color: #ffa500;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Welcome to Fourth Year Section</h1>
+    <div class="container">
+
+        <div class="content">
+            <div class="books">
+                <div>
+                    <img src="year4/book1.png">
+                </div>
+                <div>
+                    <a href="https://www.cin.ufpe.br/~tfl2/artificial-intelligence-modern-approach.9780131038059.25368.pdf"
+                        target="_blank">Artificial Intelligence - A Modern Approach</a><br>
+                    <p>BY: Stuart J Russell, Peter Norvig</p>
+                    <br>
+                    <p>Published By: Prentice Hall</p>
+                </div>
+            </div>
+            <div class="books">
+                <div>
+                    <img src="year4/book2.png">
+                </div>
+                <div>
+                    <a href="https://www.cin.ufpe.br/~cavmj/Machine%20-%20Learning%20-%20Tom%20Mitchell.pdf"
+                        target="_blank">Machine Learning</a><br>
+                    <p>BY: Tom M. Mitchell</p><br>
+                    <p>Published By: McGraw-Hill Publishers</p>
+                </div>
+            </div>
+            <div class="books">
+                <div>
+                    <img src="year4/book3.png">
+                </div>
+                <div>
+                    <a href="http://venom630.free.fr/pdf/Practical_Malware_Analysis.pdf" target="_blank">Practical
+                        Malware Analysis</a><br>
+                    <p>BY: Micheal Sikorski, Andrew Honig</p><br>
+                    <p>Published By: No Starch Press</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="back" href="index.html"> <button class="btn">Return to Home Screen</button></a>
+
+    <div class="bottom-container">
+        <p>© | College-RescueSource | 2021-2022 </p>
+    </div>
+</body>
+
+</html>

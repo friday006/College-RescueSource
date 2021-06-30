@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College-RescueSource.com | The only website for the complete notes</title>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    #logo img {
+        margin: 3px 10px;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+    }
+    
+    .head {
+        display: block;
+        margin-top: 28px;
+        text-align: center;
+        margin-bottom: 33px;
+    }
+    
+    body {
+        background-color: linen;
+        z-index: 90;
+    }
+    
+    #para1 {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .year {
+        background-color: silver;
+        display: block;
+        text-align: center;
+        margin-top: 33px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .card {
+        border: 2px solid white;
+        width: 340px;
+        height: 230px;
+        margin: 20px 13px;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .yrslc {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .cntcus {
+        background-color: silver;
+        display: block;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        margin: 0px;
+        z-index: 90;
+        padding: 20px;
+        font-weight: 600;
+    }
+    
+    .prsnl {
+        background-color: linen;
+        padding: 13px 0px 0px 0px;
+        display: block;
+        text-align: center;
+        padding-top: 50px;
+        font-weight: 30000;
+    }
+    
+    div.prsnl label {
+        margin-right: 20px;
+        font-size: 1.2rem;
+    }
+    
+    div.prsnl input {
+        width: 300px;
+        padding: 10px;
+    }
+    
+    #submit {
+        margin-top: 90px;
+        display: block;
+    }
+    
+    h4 {
+        background-color: gray;
+        display: block;
+        margin-bottom: 0px;
+        padding: 30px;
+        margin-top: -100px;
+        padding-bottom: 40;
+    }
+    
+    #btn1 {
+        margin-top: -100px;
+        margin-right: 10px;
+        background: silver;
+        border: 2px solid black;
+        color: black;
+    }
+    
+    #btn1:hover {
+        background: gray;
+        color: white;
+    }
+    
+    #btn2 {
+        margin-top: -100px;
+        margin-right: 10px;
+        background: silver;
+        border: 2px solid black;
+        color: black;
+    }
+    
+    #btn2:hover {
+        background: gray;
+        color: white;
+    }
+    
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .topbox {
+        background-color: grey;
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+    }
+    
+    #navbar ul {
+        margin: 0px;
+        padding: 7px;
+    }
+    
+    #navbar ul li {
+        margin-left: 30px;
+        border-radius: 20px;
+        color: white;
+        display: inline;
+        list-style-type: none;
+    }
+    
+    #navbar ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    #navbar ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    #navbar ul li img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .body-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .body-section #home {
+        margin-top: 500px;
+        padding-top: 55px;
+        position: relative;
+        z-index: 90;
+        background-color: linen;
+    }
+    
+    .head-portion {
+        background-image: url("img/bg.jpg");
+        background-attachment: fixed;
+        height: 700px;
+        width: 100%;
+        top: 60px;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        object-fit: cover;
+        padding-left: 16px;
+        text-align: center;
+        position: fixed;
+    }
+    
+    .head-portion .text-1 {
+        position: static;
+        z-index: 0;
+        font-size: 60px;
+        text-align: center;
+        padding: 150px 10px;
+        font-family: 'Dela Gothic One';
+        color: rgb(110, 104, 104);
+    }
+    
+    .year_selector {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(323px, 1fr));
+        grid-auto-rows: 200px;
+        grid-auto-columns: 300px;
+        padding: 80px 7px;
+        text-align: center;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 90;
+        background-color: linen;
+    }
+    
+    .Contact {
+        position: relative;
+        z-index: 90;
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .yo {
+        margin-bottom: 50px;
+        width: 100px;
+        margin-left: 40%;
+        margin-top: 10px;
+    }
+    
+    .year_selector #Box1:hover,
+    #Box2:hover,
+    #Box3:hover,
+    #Box4:hover {
+        background: #6c757d;
+        ;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    
+    .year_selector #Box1 a:hover,
+    #Box2 a:hover,
+    #Box3 a:hover,
+    #Box4 a:hover {
+        color: #fff;
+    }
+    
+    .year_selector #Box1,
+    #Box2,
+    #Box3,
+    #Box4 {
+        transition: all 0.3s ease;
+    }
+
+    .year_selector .Box .text {
+        line-height: 57px;
+        font-weight: 680;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 40px 47px;
+    }
+    
+    .year_selector .Box .text span {
+        font-size: 70px;
+        font-family: 'Dela Gothic One';
+    }
+    
+    .year_selector .Box .text a {
+        color: #111;
+        text-decoration: none;
+    }
+    
+    .Box {
+        background: silver;
+        border-radius: 8px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .year {
+        background-color: silver;
+        position: relative;
+        z-index: 90;
+        margin-bottom: 0px;
+        margin-top: 0;
+        padding: 20px;
+        font-weight: 600;
+    }
+</style>
+
+<body>
+    <div class="topbox">
+        <nav id="navbar">
+            <ul class="nv">
+                <li><img src="img/logo.png"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href=" login.html">Login</a></li>
+                <li><a href="Signup.html">Sign-Up</a></li>
+                <li><a href="#reach">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="head-portion">
+        <div class="text-1">Find Your Study Resources
+            <br>
+            <hr> Ask Your Queries</div>
+    </div>
+    <br>
+    <div class="body-section">
+        <section id="home">
+            <h1 class="head">Welcome to College-RescueSource</h1>
+            <p id="para1">Get all your college study material at one place Download any material using your college email ID</p>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <a class="btn btn-secondary yo" href="Signup.html" target="_blank">Sign-Up</a>
+            </div>
+        </section>
+    </div>
+    <div class="section">
+        <h1 class="year" id="year">Select Year</h1>
+
+        <div class="year_selector">
+            <div class="Box" id="Box1">
+                <div class="text" id="text1">
+                    <a href="#year"> <span> 1 </span> <br> Year </a>
+                </div>
+
+            </div>
+            <div class="Box" id="Box2">
+                <div class="text" id="text2">
+                    <a href="#year"> <span> 2</span> <br> Year</a>
+                </div>
+            </div>
+            <div class="Box" id="Box3">
+                <div class="text" id="text3"><a href="#year"><span> 3</span> <br> Year</a></div>
+            </div>
+            <div class="Box" id="Box4">
+                <div class="text" id="text4"><a href="#year"><span> 4</span> <br> Year</a></div>
+            </div>
+        </div>
+    </div>
+    <form class="Contact">
+        <h2 id="reach" class="cntcus">Contact Us
+        </h2>
+        <div class="prsnl"><label for="Email ID">Email</label>
+            <input type="email" placeholder="Enter your E-mail ID">
+        </div>
+        <div class="prsnl"> <label for="Username">Phone</label>
+            <input type="text" placeholder="Enter your Phone number">
+        </div>
+        <div class="prsnl"> <label for="Queries">Query</label>
+            <input type="text" placeholder="Enter your query">
+
+    </form>
+    <div id="submit">
+        <button href="#" id="btn1" type="submit" class="btn btn-lg btn-primary">Submit</button>
+        <button id="btn2" type="reset" class="btn btn-secondary btn-lg">Reset</button>
+    </div>
+    <br><br><br><br><br><br>
+
+    <h4>
+        © College-RescueSource | 2021-2024
+    </h4>
+    </div>
+</body>
+<script src="Js/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#Box1").click(function() {
+            $("#text1").animate({
+
+                opacity: '0',
+                height: '-=0px',
+                width: '-=0px'
+
+            });
+            setTimeout(() => {
+                window.location.replace("first.html");
+
+            }, 600);
+
+        });
+        $("#Box2").click(function() {
+            $("#text2").animate({
+
+                opacity: '0',
+                height: '-=0px',
+                width: '-=0px'
+            });
+            setTimeout(() => {
+                window.location.replace("second.html");
+
+            }, 600);
+        });
+        $("#Box3").click(function() {
+            $("#text3").animate({
+
+                opacity: '0',
+                height: '-=0px',
+                width: '-=0px'
+            });
+            setTimeout(() => {
+                window.location.replace("third.html");
+
+            }, 600);
+        });
+        $("#Box4").click(function() {
+            $("#text4").animate({
+
+                opacity: '0',
+                height: '-=0px',
+                width: '-=0px'
+            });
+            setTimeout(() => {
+                window.location.replace("fourth.html");
+
+            }, 600);
+        });
+
+
+
+    });
+</script>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Year Section</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg') center center/cover no-repeat;
+        }
+
+        .heading {
+            color: darkgreen;
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            font-family: 'Merienda One', cursive;
+            font-weight: bolder;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        .content {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .books {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 3px 3px grey;
+        }
+
+        .books:hover {
+            box-shadow: -3px -3px grey;
+            border: 2px solid brown;
+        }
+
+        .books a {
+            display: inline-block;
+            font-family: 'Teko', sans-serif;
+            color: #b8860b;
+            text-decoration: none;
+            font-size: 1.6rem;
+        }
+
+        .books a:hover {
+            color: #a52a2a;
+        }
+
+        .books p {
+            display: inline-block;
+            font-family: 'Teko', sans-serif;
+            font-size: 1.6rem;
+        }
+
+        .books img {
+            width: 200px;
+            height: 260px;
+        }
+
+        .btn {
+            display: block;
+            background-color: #a9a9a9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px auto;
+            font-family: 'Caveat', cursive;
+            font-size: 1.3rem;
+        }
+
+        .back {
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .bottom-container {
+            padding: 20px;
+            background-color: #ffe4c4;
+        }
+
+        .bottom-container p {
+            display: block;
+            color: #ffa500;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Welcome to Second Year Section</h1>
+    <div class="container">
+
+        <div class="content">
+            <div class="books">
+                <div>
+                    <img src="year2/book1.png">
+                </div>
+                <div>
+                    <a href="https://www.octawian.ro/fisiere/situri/asor/build/html/_downloads/fefeca9718f2713b96903ded3606962a/Silberschatz_A_databases_6th_ed.pdf"
+                        target="_blank">Database System Concepts</a><br>
+                    <p>BY: Abraham Silberschatz, Henry F. Korth, S. Sudarshan</p>
+                </div>
+            </div>
+            <div class="books">
+                <div>
+                    <img src="year2/book2.png">
+                </div>
+                <div>
+                    <a href="https://fdocuments.in/download/modern-digital-and-analog-communication-bp-lathi3rd-ed"
+                        target="_blank">Modern Digital and Analog Communication Systems</a><br>
+                    <p>BY: B.P. Lathi</p>
+                </div>
+            </div>
+            <div class="books">
+                <div>
+                    <img src="year2/book3.png">
+                </div>
+                <div>
+                    <a href="" target="_blank">Software Engineering A Practitioner's Approach</a><br>
+                    <p>BY: Roger S. Pressman, Bruce R. Maxim</p>
+                </div>
+            </div>
+            <div class="books">
+                <div>
+                    <img src="year2/book4.png">
+                </div>
+                <div>
+                    <a href=" https://ict.iitk.ac.in/wp-content/uploads/CS422-Computer-Architecture-ComputerOrganizationAndDesign5thEdition2014.pdf"
+                        target="_blank">Computer Organization and Design</a><br>
+                    <p>BY: David A. Patterson, John L. Hennessy</p><br>
+                    <p>Published By: Elsevier</p>
+                </div>
+            </div>
+            <div class="books">
+                <div>
+                    <img src="year2/book5.png">
+                </div>
+                <div>
+                    <a href="https://web.iiit.ac.in/~pratik.kamble/storage/Algorithms/Cormen_Algorithms_3rd.pdf"
+                        target="_blank">Introduction to Algorithms</a><br>
+                    <p>BY: Thomas H. Corman, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein</p><br>
+                    <p>Published By: The MIT Press</p>
+                </div>
+            </div>
+            <div class="books">
+                <div>
+                    <img src="year2/book6.png">
+                </div>
+                <div>
+                    <a href="http://www.cs.put.poznan.pl/akobusinska/downloads/Operating_Systems_Concepts.pdf"
+                        target="_blank">Operating System Concepts</a><br>
+                    <p>BY: Silberschatz, Galvin, Gagne</p><br>
+                    <p>Published by: Wiley Publications</p>
+                </div>
+            </div>
+            <div class="books">
+                <div>
+                    <img src="year2/book7.png">
+                </div>
+                <div>
+                    <a href="http://dcn.icc.spbstu.ru/~karpov/%D0%9A%D1%83%D1%80%D1%81%20%D0%9B%D0%9E%D0%93%D0%98%D0%9A%D0%90/%D0%94%D0%9E%D0%9F%D0%9E%D0%9B%D0%9D%D0%98%D0%A2%D0%95%D0%9B%D0%AC%D0%9D%D0%9E%D0%95%20%D0%A7%D1%82%D0%B5%D0%BD%D0%B8%D0%B5/LogicInCS.pdf"
+                        target="_blank">Logic in Computer Science</a><br>
+                    <p>BY: Micheal Huth, Mark Ryan</p><br>
+                    <p>Published By: Cambridge Publications</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="back" href="index.html"> <button class="btn">Return to Home Screen</button></a>
+
+    <div class="bottom-container">
+        <p>© | College-RescueSource | 2021-2022 </p>
+    </div>
+</body>
+
+</html>
